@@ -74,11 +74,11 @@ Configuration for services:
 
 - [Calibre-Web][calibre-web]
 
-- [FreshRSS][freshrss] plus extensions
-
 - [Home Assistant][home-assistant] in a podman container
 
-- [Munin][munin]
+- [Miniflux][miniflux]
+
+- [Munin][munin] at https://munin.psquid.net/
 
 - [ntfy.sh][ntfy]
 
@@ -121,8 +121,8 @@ the current hostname of the system they're running on).
 
 [agenix]: https://github.com/ryantm/agenix
 [calibre-web]: https://github.com/janeczku/calibre-web
-[freshrss]: https://www.freshrss.org/
 [home-assistant]: https://www.home-assistant.io/
+[miniflux]: https://miniflux.app/
 [munin]: https://munin-monitoring.org/
 [ntfy]: https://ntfy.sh/
 [nginx]: https://nginx.org/

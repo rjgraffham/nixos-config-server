@@ -33,4 +33,10 @@
       aliases = [ "www.psquid.net" ];
     };
   };
+  
+  services.nginx.virtualHosts."dl.psquid.net".extraConfig = ''
+    location ~* \.(eot|ttf|woff|woff2)$ {
+      add_header Access-Control-Allow-Origin *;
+    }
+  '';
 }

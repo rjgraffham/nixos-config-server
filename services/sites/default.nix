@@ -1,3 +1,5 @@
+{ sources, ... }:
+
 {
 
   networking.firewall.allowedTCPPorts = [ 80 443 ];
@@ -15,11 +17,11 @@
     # default catch-all sites
     virtualHosts."_" = {
       addSSL = true;
-      sslCertificateKey = "/var/www/snakeoil-2021.key";
-      sslCertificate = "/var/www/snakeoil-2021.crt";
+      sslCertificateKey = "${sources.sites}/snakeoil-2021.key";
+      sslCertificate = "${sources.sites}/snakeoil-2021.crt";
       default = true;
       locations."/" = {
-        root = "/var/www/html";
+        root = "${sources.sites}/html";
         index = "nonexistent.html";
       };
     };

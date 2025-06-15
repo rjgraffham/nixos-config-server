@@ -4,12 +4,12 @@
   services.nginx.simpleVhosts = {
     "dl.psquid.net" = {
       vhostType = "static";
-      webroot = "/var/www/dl.psquid.net/html";
+      webroot = "${sources.sites}/dl.psquid.net/html";
     };
 
     "dl-public.psquid.net" = {
       vhostType = "index";
-      webroot = "/var/www/dl-public.psquid.net/html";
+      webroot = "${sources.sites}/dl-public.psquid.net/html";
     };
 
     "psquid.net" = let
@@ -36,6 +36,7 @@
   
   services.nginx.virtualHosts."dl.psquid.net".extraConfig = ''
     location ~* \.(eot|ttf|woff|woff2)$ {
+      root ${sources.sites}/dl.psquid.net/html;
       add_header Access-Control-Allow-Origin *;
     }
   '';

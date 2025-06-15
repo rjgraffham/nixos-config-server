@@ -40,5 +40,12 @@
     "rev": "506bceaf978d7a789ec3a13ec9b83454d08926fa",
     "narHash": "sha256-Z1LqbplrZ8Qhe4ZlA18iwZr3kels7u6rQi4M/RriDMI=",
     "lastModified": 1738241616
+  },
+  "sites": {
+    "url": "file:///home/rj/sites",
+    "branch": "main",
+    "rev": "da1756113e612eacaa1813745bf6b96bded6b592",
+    "narHash": "sha256-0R8X8Z3bMSyu15MU1GdK9VdBEXNSPYTPSP9POq1vxn0=",
+    "lastModified": 1749970378
   }
 }

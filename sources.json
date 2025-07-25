@@ -2,9 +2,9 @@
   "nixpkgs-unstable": {
     "url": "https://github.com/NixOS/nixpkgs",
     "branch": "nixos-unstable",
-    "rev": "6e987485eb2c77e5dcc5af4e3c70843711ef9251",
-    "narHash": "sha256-RKwfXA4OZROjBTQAl9WOZQFm7L8Bo93FQwSJpAiSRvo=",
-    "lastModified": 1752687322
+    "rev": "fc02ee70efb805d3b2865908a13ddd4474557ecf",
+    "narHash": "sha256-i+CQV2rPmP8wHxj0aq4siYyohHwVlsh40kV89f3nw1s=",
+    "lastModified": 1753250450
   },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
@@ -16,9 +16,9 @@
   "nixos-hardware": {
     "url": "https://github.com/NixOS/nixos-hardware",
     "branch": "master",
-    "rev": "d1bfa8f6ccfb5c383e1eba609c1eb67ca24ed153",
-    "narHash": "sha256-P8J72psdc/rWliIvp8jUpoQ6qRDlVzgSDDlgkaXQ0Fw=",
-    "lastModified": 1752666637
+    "rev": "cc66fddc6cb04ab479a1bb062f4d4da27c936a22",
+    "narHash": "sha256-nFxE8lk9JvGelxClCmwuJYftbHqwnc01dRN4DVLUroM=",
+    "lastModified": 1753122741
   },
   "freshrss-langfeld": {
     "url": "https://github.com/langfeld/FreshRSS-extensions",

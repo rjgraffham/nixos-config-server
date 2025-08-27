@@ -87,6 +87,15 @@ in
   # enable bluetooth
   hardware.bluetooth.enable = true;
 
+  # spin down Argon One case fan on boot
+  systemd.services."argon-one-fan-spindown" = {
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.i2c-tools}/bin/i2cset -y 1 0x1a 0";
+    };
+  };
+
   # configure root on USB-attached SSD, /boot on microSD
   fileSystems = {
     "/" = {

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 
@@ -25,6 +25,10 @@
     });
 
   };
+
+  # Workaround for incorrect service definition, pending upstream fix in PR 441487
+  systemd.services.calibre-web.serviceConfig.environment = lib.mkForce "";
+  systemd.services.calibre-web.environment.CACHE_DIR = "/var/cache/calibre-web";
 
   services.nginx.simpleVhosts."calibre.psquid.net" = {
     vhostType = "proxy";

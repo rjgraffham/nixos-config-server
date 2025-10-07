@@ -120,10 +120,8 @@ in
     "vm.page-cluster" = 0;
   };
 
-  # add rpi tools and agenix to PATH
+  # add agenix to PATH
   environment.systemPackages = with pkgs; [
-    libraspberrypi
-    raspberrypi-eeprom
     (pkgs.callPackage "${sources.agenix}/pkgs/agenix.nix" {})
   ];
 

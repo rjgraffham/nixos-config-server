@@ -7,7 +7,7 @@ NIXCMD=( "nix" "--extra-experimental-features" "nix-command fetch-tree" )
 # Parse our flags out of the args if present, and then store resulting args without them.
 
 declare -a apply_args
-build_args=( "--no-link" "--print-out-paths" "--pure-eval" )
+build_args=( "--no-link" "--print-out-paths" )
 print_out_path=
 print_diff=
 apply_build=yes
@@ -133,7 +133,7 @@ store_path="$(echo "$metadata" | jq -r .outPath)"
 cd $(dirname $0)
 
 if [[ -n "$do_eval" ]]; then
-	"${NIXCMD[@]}" eval --pure-eval -f "$store_path/build.nix" "$attr" --argstr hostname "$hostname" --argstr inject-self-source "$metadata"
+	"${NIXCMD[@]}" eval -f "$store_path/build.nix" "$attr" --argstr hostname "$hostname" --argstr inject-self-source "$metadata"
 	exit
 else
 	toplevel="$("${NIXCMD[@]}" build "${build_args[@]}" -f "$store_path/build.nix" "$attr" --argstr hostname "$hostname" --argstr inject-self-source "$metadata")"

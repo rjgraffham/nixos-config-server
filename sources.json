@@ -47,5 +47,12 @@
     "rev": "da1756113e612eacaa1813745bf6b96bded6b592",
     "narHash": "sha256-0R8X8Z3bMSyu15MU1GdK9VdBEXNSPYTPSP9POq1vxn0=",
     "lastModified": 1749970378
+  },
+  "uikit": {
+    "url": "https://github.com/uikit/uikit",
+    "branch": "main",
+    "rev": "39124fd4a9564c4d21bf0412193bd0ccbc752554",
+    "narHash": "sha256-Z0Koy8z6Af4XUtU0nXS/GiCd3i0omDJk9RuQuXH1/cQ=",
+    "lastModified": 1760342179
   }
 }

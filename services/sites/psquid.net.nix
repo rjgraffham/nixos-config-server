@@ -34,9 +34,26 @@
     };
   };
   
-  services.nginx.virtualHosts."dl.psquid.net".extraConfig = ''
+  services.nginx.virtualHosts."dl.psquid.net".extraConfig = let
+
+    uikit = pkgs.stdenv.mkDerivation {
+      name = "uikit";
+      src = sources.uikit.outPath;
+
+      buildPhase = ''
+        mkdir -p $out
+        cp -r $src/dist/* $out/
+      '';
+    };
+
+  in ''
     location ~* \.(eot|ttf|woff|woff2)$ {
       root ${sources.sites}/dl.psquid.net/html;
+      add_header Access-Control-Allow-Origin *;
+    }
+
+    location /uikit/ {
+      alias ${uikit}/;
       add_header Access-Control-Allow-Origin *;
     }
   '';

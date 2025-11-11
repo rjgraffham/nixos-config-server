@@ -12,6 +12,7 @@
     environment.TZ = "Europe/London";
 
     image = "ghcr.io/home-assistant/home-assistant:stable";
+    pull = "newer";
 
     extraOptions = [
       "--network=host"

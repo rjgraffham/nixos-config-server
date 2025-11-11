@@ -31,6 +31,8 @@
       "filesystem_local"
       "filesystem_smb"
       "gpodder"
+      "hass"
+      "hass_players"
       "itunes_podcasts"
       "musicbrainz"
       "player_group"

@@ -36,6 +36,7 @@ with lib;
       locations."/" = {
         proxyPass = mkIf (vhostCfg.vhostType == "proxy" || vhostCfg.vhostType == "oci-container")
           "http://localhost:${toString vhostCfg.port}";
+        proxyWebsockets = true;
         root = mkIf (vhostCfg.vhostType == "static" || vhostCfg.vhostType == "index")
           (if vhostCfg.webroot == null then "${sources.sites}/${vhost}" else vhostCfg.webroot);
         return = mkIf (vhostCfg.vhostType == "redirect") "302 ${vhostCfg.redirectTo}";

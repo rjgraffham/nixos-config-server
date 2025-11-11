@@ -14,7 +14,7 @@ in
   # Ensure permissions are correct on the data dirs for group access
   systemd.services.syncthing.serviceConfig.UMask = "0007";
   systemd.tmpfiles.rules = [
-    "d ${syncthing.dataDir} 0750 ${syncthing.user} ${syncthing.group}"          # ensure base dir exists and is u=rwx,g=rw
+    "d ${syncthing.dataDir} 0770 ${syncthing.user} ${syncthing.group}"          # ensure base dir exists and is u=rwx,g=rwx
     "z ${syncthing.dataDir}/*/ 2770 ${syncthing.user} ${syncthing.group}"       # set all topdirs to u=rwx,g=rws
     "Z ${syncthing.dataDir}/*/* 0770 ${syncthing.user} ${syncthing.group}"      # set files in topdirs to u=rwx,g=rwx (recursive)
     "Z ${syncthing.dataDir}/.config 0700 ${syncthing.user} ${syncthing.group}"  # ...except .config, which is u=rwx only (recursive)

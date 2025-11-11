@@ -28,6 +28,7 @@
       "builtin"
       "builtin_player"
       "chromecast"
+      "dlna"
       "filesystem_local"
       "filesystem_smb"
       "gpodder"

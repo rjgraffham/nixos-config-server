@@ -21,5 +21,7 @@
 
   networking.firewall.allowedTCPPorts = [ 8123 ];
 
+  services.music-assistant.enable = true;
+
 }
 

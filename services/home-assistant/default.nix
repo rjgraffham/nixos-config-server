@@ -22,28 +22,5 @@
 
   networking.firewall.allowedTCPPorts = [ 8123 ];
 
-  services.music-assistant = {
-    enable = true;
-    providers = [
-      "builtin"
-      "builtin_player"
-      "chromecast"
-      "dlna"
-      "filesystem_local"
-      "filesystem_smb"
-      "gpodder"
-      "hass"
-      "hass_players"
-      "itunes_podcasts"
-      "musicbrainz"
-      "player_group"
-      "podcastfeed"
-      "soundcloud"
-      "spotify"
-      "spotify_connect"
-      "tunein"
-    ];
-  };
-
 }
 

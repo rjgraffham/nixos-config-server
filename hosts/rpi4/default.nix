@@ -14,6 +14,7 @@ in
     ../../services/miniflux
     ../../services/home-assistant
     ../../services/munin
+    ../../services/navidrome
     ../../services/ntfy
     ../../services/sites
     ../../services/syncthing

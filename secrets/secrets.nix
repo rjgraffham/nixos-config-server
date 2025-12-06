@@ -9,4 +9,5 @@ in
 {
   "munin-email.age".publicKeys = users ++ systems;
   "miniflux-admin.age".publicKeys = users ++ systems;
+  "pinchflat.age".publicKeys = users ++ systems;
 }

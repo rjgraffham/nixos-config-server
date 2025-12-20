@@ -2,9 +2,9 @@
   "nixpkgs-unstable": {
     "url": "https://github.com/NixOS/nixpkgs",
     "branch": "nixos-unstable",
-    "rev": "2fbfb1d73d239d2402a8fe03963e37aab15abe8b",
-    "narHash": "sha256-9VvC20PJPsleGMewwcWYKGzDIyjckEz8uWmT0vCDYK0=",
-    "lastModified": 1765472234
+    "rev": "c6245e83d836d0433170a16eb185cefe0572f8b8",
+    "narHash": "sha256-G/WVghka6c4bAzMhTwT2vjLccg/awmHkdKSd2JrycLc=",
+    "lastModified": 1766070988
   },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
@@ -37,8 +37,8 @@
   "uikit": {
     "url": "https://github.com/uikit/uikit",
     "branch": "main",
-    "rev": "18d86f5145139b9169e462e0361332c002ed5ae8",
-    "narHash": "sha256-PMzC9PIQpU3HjPMsX0PX35dtcCVhtmWF49gEYY0BzMo=",
-    "lastModified": 1764941013
+    "rev": "9525cf4574efa7340768ca031fca10ba15674bae",
+    "narHash": "sha256-V9HOapIZcq4/+NeZHLzz1IlpuR9lpxyA/dBwHjto4Lw=",
+    "lastModified": 1766185117
   }
 }

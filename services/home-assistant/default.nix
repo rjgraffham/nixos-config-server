@@ -1,6 +1,8 @@
 {
 
-  virtualisation.oci-containers.backend = "podman";
+  imports = [
+    ../../modules/podman.nix
+  ];
 
   virtualisation.oci-containers.containers.homeassistant = {
 

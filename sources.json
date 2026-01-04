@@ -2,9 +2,9 @@
   "nixpkgs-unstable": {
     "url": "https://github.com/NixOS/nixpkgs",
     "branch": "nixos-unstable",
-    "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
-    "narHash": "sha256-coBu0ONtFzlwwVBzmjacUQwj3G+lybcZ1oeNSQkgC0M=",
-    "lastModified": 1766902085
+    "rev": "fb7944c166a3b630f177938e478f0378e64ce108",
+    "narHash": "sha256-EgE0pxsrW9jp9YFMkHL9JMXxcqi/OoumPJYwf+Okucw=",
+    "lastModified": 1767379071
   },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
@@ -16,9 +16,9 @@
   "nixos-hardware": {
     "url": "https://github.com/NixOS/nixos-hardware",
     "branch": "master",
-    "rev": "9b3c38bf6c260d0e88154ef07fa833fa845bfd14",
-    "narHash": "sha256-b0aM3221Pw6vbACFqZrVzZjMNqXVPi1dvgLr8QTbajc=",
-    "lastModified": 1767070591
+    "rev": "40b1a28dce561bea34858287fbb23052c3ee63fe",
+    "narHash": "sha256-ljDBUDpD1Cg5n3mJI81Hz5qeZAwCGxon4kQW3Ho3+6Q=",
+    "lastModified": 1767185284
   },
   "blog": {
     "url": "file:///home/rj/psquid.net",

@@ -14,15 +14,21 @@
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
 
-    # default catch-all sites
+    # default catch-all sites are deferred to containerized nginx
+    # two separate blocks are required as the proxied ports are different
     virtualHosts."_" = {
-      addSSL = true;
+      locations."/" = {
+        proxyPass = "http://localhost:9980";
+      };
+    };
+    virtualHosts."_ssl" = {
+      onlySSL = true;
       sslCertificateKey = "${sources.sites}/snakeoil-2021.key";
       sslCertificate = "${sources.sites}/snakeoil-2021.crt";
+      serverName = "_";
       default = true;
       locations."/" = {
-        root = "${sources.sites}/html";
-        index = "nonexistent.html";
+        proxyPass = "http://localhost:9943";
       };
     };
   };

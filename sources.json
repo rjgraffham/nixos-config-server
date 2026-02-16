@@ -2,23 +2,23 @@
   "nixpkgs-unstable": {
     "url": "https://github.com/NixOS/nixpkgs",
     "branch": "nixos-unstable",
-    "rev": "62c8382960464ceb98ea593cb8321a2cf8f9e3e5",
-    "narHash": "sha256-kKB3bqYJU5nzYeIROI82Ef9VtTbu4uA3YydSk/Bioa8=",
-    "lastModified": 1769789167
+    "rev": "a82ccc39b39b621151d6732718e3e250109076fa",
+    "narHash": "sha256-gf2AmWVTs8lEq7z/3ZAsgnZDhWIckkb+ZnAo5RzSxJg=",
+    "lastModified": 1771008912
   },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
     "branch": "main",
-    "rev": "fcdea223397448d35d9b31f798479227e80183f6",
-    "narHash": "sha256-wyT7Pl6tMFbFrs8Lk/TlEs81N6L+VSybPfiIgzU8lbQ=",
-    "lastModified": 1762618334
+    "rev": "b027ee29d959fda4b60b57566d64c98a202e0feb",
+    "narHash": "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=",
+    "lastModified": 1770165109
   },
   "nixos-hardware": {
     "url": "https://github.com/NixOS/nixos-hardware",
     "branch": "master",
-    "rev": "a351494b0e35fd7c0b7a1aae82f0afddf4907aa8",
-    "narHash": "sha256-QEDtctEkOsbx8nlFh4yqPEOtr4tif6KTqWwJ37IM2ds=",
-    "lastModified": 1769302137
+    "rev": "66e1a090ded57a0f88e2b381a7d4daf4a5722c3f",
+    "narHash": "sha256-H1l+zHq+ZinWH7F1IidpJ2farmbfHXjaxAm1RKWE1KI=",
+    "lastModified": 1771257191
   },
   "blog": {
     "url": "file:///home/rj/psquid.net",
@@ -37,8 +37,8 @@
   "uikit": {
     "url": "https://github.com/uikit/uikit",
     "branch": "main",
-    "rev": "bd0d1478cc3bb6bc4556d329e20901628d87f5a6",
-    "narHash": "sha256-UAPGeKxHDRB/ni1WPv72ot6lvX5q+SnEaoRywMudx/4=",
-    "lastModified": 1769524586
+    "rev": "c6d657a7881fa5f856e10dcd1996dafca6976732",
+    "narHash": "sha256-B50u4VcwtwCz5As1g9N0edkREdxTAgJJOK342PCIOcU=",
+    "lastModified": 1770901309
   }
 }

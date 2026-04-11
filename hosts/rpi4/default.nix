@@ -16,7 +16,6 @@ in
     ../../services/munin
     ../../services/navidrome
     ../../services/ntfy
-    ../../services/pinchflat
     ../../services/sites
     ../../services/syncthing
     ../../services/tailscale

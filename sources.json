@@ -30,9 +30,9 @@
   "sites": {
     "url": "file:///home/rj/sites",
     "branch": "main",
-    "rev": "da1756113e612eacaa1813745bf6b96bded6b592",
-    "narHash": "sha256-0R8X8Z3bMSyu15MU1GdK9VdBEXNSPYTPSP9POq1vxn0=",
-    "lastModified": 1749970378
+    "rev": "88842b2dd234b1d3273b062066b4c7c22950746b",
+    "narHash": "sha256-BnuGnMXF/oJWW/G3/fel7YWcrw0TKRhgXJiXyITPmew=",
+    "lastModified": 1776492258
   },
   "uikit": {
     "url": "https://github.com/uikit/uikit",

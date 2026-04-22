@@ -12,6 +12,11 @@
       webroot = "${sources.sites}/dl-public.psquid.net/html";
     };
 
+    "yomi.psquid.net" = {
+      vhostType = "proxy";
+      port = 4567;
+    };
+
     "psquid.net" = let
       blog = pkgs.stdenv.mkDerivation {
         name = "blog";

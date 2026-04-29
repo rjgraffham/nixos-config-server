@@ -42,6 +42,10 @@
 
       [df_abs]
       env.exclude none unknown rootfs iso9660 squashfs udf romfs ramfs debugfs cgroup_root devtmpfs tmpfs
+
+      [hddtemp_smartctl]
+      hddtemp_smartctl.sda.warning 64
+      hddtemp_smartctl.sda.critical 67
     '';
 
     extraPlugins = let

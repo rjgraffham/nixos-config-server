@@ -95,7 +95,7 @@ in
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = "${pkgs.i2c-tools}/bin/i2cset -y 1 0x1a 1";
+      ExecStart = "${pkgs.i2c-tools}/bin/i2cset -y 1 0x1a 0";
     };
   };
 

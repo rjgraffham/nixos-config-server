@@ -16,6 +16,9 @@ in
       # Set the app's base URL based on hostname
       BASE_URL = "https://${hostname}/";
 
+      # Bind to 0.0.0.0 rather than localhost
+      LISTEN_ADDR = "0.0.0.0:8080";
+
       # Don't clean up old entries automatically
       CLEANUP_ARCHIVE_READ_DAYS = -1;
       CLEANUP_ARCHIVE_UNREAD_DAYS = -1;

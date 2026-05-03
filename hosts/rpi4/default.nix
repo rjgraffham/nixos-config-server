@@ -15,8 +15,6 @@ in
     ../../services/home-assistant
     ../../services/munin
     ../../services/navidrome
-    ../../services/ntfy
-    ../../services/sites
     ../../services/syncthing
     ../../services/tailscale
 
@@ -33,9 +31,6 @@ in
 
     # nix configuration
     ../../nix
-
-    # option-provider modules
-    ../../modules/simple-nginx
 
     # external modules
     "${sources.agenix}/modules/age.nix"
@@ -87,6 +82,13 @@ in
 
   # enable bluetooth
   hardware.bluetooth.enable = true;
+
+  # open firewall on web ports (not being done automatically as web server is not nixos service)
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
+  networking.firewall.allowedUDPPorts = [ 443 ];
+
+  # allow unprivileged user to listen to ports >= 80 (to allow caddy container to run as user)
+  boot.kernel.sysctl."net.ipv4.ip_unprivileged_port_start" = 80;
 
   # spin down Argon One case fan on boot
   systemd.services."argon-one-fan-spindown" = {

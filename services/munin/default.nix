@@ -92,10 +92,5 @@
     group = "munin";
   };
 
-  services.nginx.simpleVhosts."munin.psquid.net" = {
-    vhostType = "static";
-    webroot = "/var/www/munin";
-  };
-
 }
 

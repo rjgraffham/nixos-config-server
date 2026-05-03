@@ -20,10 +20,5 @@
 
   };
 
-  services.nginx.simpleVhosts."music.psquid.net" = {
-    vhostType = "proxy";
-    port = config.services.navidrome.settings.Port;
-  };
-
 }
 

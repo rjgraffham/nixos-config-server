@@ -45,9 +45,4 @@ in
 
   age.secrets.miniflux-admin.file = ../../secrets/miniflux-admin.age;
 
-  services.nginx.simpleVhosts."${hostname}" = {
-    vhostType = "proxy";
-    port = 8080;
-  };
-
 }

@@ -18,6 +18,7 @@
       git
       ripgrep
       bat
+      borgbackup
     ];
 
     openssh.authorizedKeys.keys = [

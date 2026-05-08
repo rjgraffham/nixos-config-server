@@ -19,12 +19,5 @@
     "rev": "df7783100babf59001340a7a874ba3824e441ecb",
     "narHash": "sha256-k+LVe9YaO2BEPB9AaCtTtOMCeGi4dxDo6gt4Un3qoPY=",
     "lastModified": 1777917524
-  },
-  "sites": {
-    "url": "file:///home/rj/sites",
-    "branch": "main",
-    "rev": "4c0f8bfd74c9c930e8feb431dc9c875267526f79",
-    "narHash": "sha256-JyiogemF7mbjDDvPfusMX9B0A/0xGlM3/a02KghGL3Q=",
-    "lastModified": 1777904065
   }
 }

@@ -27,6 +27,7 @@ in
     ../../programs/neovim
     ../../programs/starship
     ../../programs/tmux
+    ../../modules/podman.nix
 
     # nix configuration
     ../../nix

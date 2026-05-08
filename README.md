@@ -28,15 +28,6 @@ Definitions for hosts are found in `hosts/default.nix`, with a few fields:
   this host.
 
 
-### `modules`
-
-Modules that extend NixOS's configuration options:
-
-- `simple-nginx` provides options under `services.nginx.simpleVhosts` to
-  allow terse definition of a number of types of vhosts with SSL-by-default
-  (using ACME certificate provisioning).
-
-
 ### `overlays`
 
 Overlays to be applied to nixpkgs. One overlay per nix file, defined directly
@@ -74,15 +65,9 @@ Configuration for services:
 
 - [Calibre-Web][calibre-web]
 
-- [Home Assistant][home-assistant] in a podman container
-
 - [Miniflux][miniflux]
 
 - [Munin][munin] at https://munin.psquid.net/
-
-- [ntfy.sh][ntfy]
-
-- Static sites served by [nginx][nginx]
 
 - [Syncthing][syncthing]
 

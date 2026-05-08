@@ -12,7 +12,6 @@ in
     # services
     ../../services/calibre-web
     ../../services/miniflux
-    ../../services/home-assistant
     ../../services/munin
     ../../services/navidrome
     ../../services/syncthing

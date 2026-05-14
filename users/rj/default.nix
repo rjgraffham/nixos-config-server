@@ -19,6 +19,7 @@
       ripgrep
       bat
       borgbackup
+      sshfs
     ];
 
     openssh.authorizedKeys.keys = [

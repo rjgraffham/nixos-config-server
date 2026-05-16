@@ -10,7 +10,6 @@ in
 
   imports = [
     # services
-    ../../services/calibre-web
     ../../services/miniflux
     ../../services/munin
     ../../services/navidrome

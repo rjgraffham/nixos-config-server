@@ -63,8 +63,6 @@ Secrets used by various modules, encrypted using [agenix][agenix].
 
 Configuration for services:
 
-- [Calibre-Web][calibre-web]
-
 - [Miniflux][miniflux]
 
 - [Munin][munin] at https://munin.psquid.net/

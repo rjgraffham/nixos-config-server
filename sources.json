@@ -2,9 +2,9 @@
   "nixpkgs-unstable": {
     "url": "https://github.com/NixOS/nixpkgs",
     "branch": "nixos-unstable",
-    "rev": "da5ad661ba4e5ef59ba743f0d112cbc30e474f32",
-    "narHash": "sha256-zi7/fsqM/kFdNuED//4WOCUtezGtKKqRNORjMvfwjnA=",
-    "lastModified": 1778443072
+    "rev": "d233902339c02a9c334e7e593de68855ad26c4cb",
+    "narHash": "sha256-30sZNZoA1cqF5JNO9fVX+wgiQYjB7HJqqJ4ztCDeBZE=",
+    "lastModified": 1778869304
   },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
@@ -16,8 +16,8 @@
   "nixos-hardware": {
     "url": "https://github.com/NixOS/nixos-hardware",
     "branch": "master",
-    "rev": "9bd7c80d43e258aaa607d83b43661df11444d808",
-    "narHash": "sha256-xYGrSg6354UK2K4WSQd4+TfyvfqmvFbSY+ZtGQUXK0c=",
-    "lastModified": 1778593042
+    "rev": "379c1f274f0fa354d012f0600806de54e79f29b5",
+    "narHash": "sha256-Aipz0UiBhE2a1FYJrNc2y+5vKWo5QVkhmaIJk3/ls+g=",
+    "lastModified": 1778945272
   }
 }

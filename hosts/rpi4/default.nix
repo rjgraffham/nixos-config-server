@@ -89,12 +89,12 @@ in
   # allow unprivileged user to listen to ports >= 80 (to allow caddy container to run as user)
   boot.kernel.sysctl."net.ipv4.ip_unprivileged_port_start" = 80;
 
-  # spin down Argon One case fan on boot
+  # fully spin up Argon One case fan on boot
   systemd.services."argon-one-fan-spindown" = {
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = "${pkgs.i2c-tools}/bin/i2cset -y 1 0x1a 0";
+      ExecStart = "${pkgs.i2c-tools}/bin/i2cset -y 1 0x1a 100";
     };
   };
 

@@ -16,8 +16,8 @@
   "nixos-hardware": {
     "url": "https://github.com/NixOS/nixos-hardware",
     "branch": "master",
-    "rev": "379c1f274f0fa354d012f0600806de54e79f29b5",
-    "narHash": "sha256-Aipz0UiBhE2a1FYJrNc2y+5vKWo5QVkhmaIJk3/ls+g=",
-    "lastModified": 1778945272
+    "rev": "c97bc4d15bd3473dd095e8e8ba57330ab1943a77",
+    "narHash": "sha256-j1iZsLy6oFApqR1oiDmHhvkwxXqcNi0aoSJj643LuwU=",
+    "lastModified": 1779258371
   }
 }

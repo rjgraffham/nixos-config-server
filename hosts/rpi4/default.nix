@@ -10,7 +10,6 @@ in
 
   imports = [
     # services
-    ../../services/miniflux
     ../../services/munin
     ../../services/navidrome
     ../../services/syncthing

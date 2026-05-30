@@ -11,7 +11,7 @@
   # set up various useful flake registry entries
   nix.registry = {
     # `nixpkgs` is set to the nixpkgs source used to build this configuration
-    nixpkgs.to = { type = "path"; path = sources.nixpkgs-unstable.outPath; };
+    nixpkgs.to = { type = "path"; path = sources.nixpkgs.outPath; };
 
     # `templates` is set to the same as the global registry, so `nix flake init` can work
     templates.to = { type = "github"; owner = "NixOS"; repo = "templates"; };

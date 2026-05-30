@@ -58,7 +58,7 @@
         {
           name = "nixpkgs_age";
           runtimeInputs = [ pkgs.bc ];
-          runtimeEnv.NIXPKGS_UNSTABLE_LAST_MODIFIED = toString sources.nixpkgs-unstable.lastModified;
+          runtimeEnv.NIXPKGS_LAST_MODIFIED = toString sources.nixpkgs.lastModified;
           runtimeEnv.SELF_LAST_MODIFIED = toString sources.self.lastModified;
         }
         { name = "ping_rtt"; runtimeInputs = with pkgs; [ gnugrep findutils ]; }

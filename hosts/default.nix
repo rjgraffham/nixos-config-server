@@ -9,7 +9,7 @@ in
   rpi4 = rec {
     system = "aarch64-linux";
     config = ./rpi4/default.nix;
-    nixpkgs = sources.nixpkgs-unstable;
+    nixpkgs = sources.nixpkgs;
     overlays = [
     ];
   };

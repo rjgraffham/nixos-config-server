@@ -1,11 +1,4 @@
 {
-  "nixpkgs-unstable": {
-    "url": "https://github.com/NixOS/nixpkgs",
-    "branch": "nixos-unstable",
-    "rev": "d233902339c02a9c334e7e593de68855ad26c4cb",
-    "narHash": "sha256-30sZNZoA1cqF5JNO9fVX+wgiQYjB7HJqqJ4ztCDeBZE=",
-    "lastModified": 1778869304
-  },
   "agenix": {
     "url": "https://github.com/ryantm/agenix",
     "branch": "main",
@@ -19,5 +12,12 @@
     "rev": "c97bc4d15bd3473dd095e8e8ba57330ab1943a77",
     "narHash": "sha256-j1iZsLy6oFApqR1oiDmHhvkwxXqcNi0aoSJj643LuwU=",
     "lastModified": 1779258371
+  },
+  "nixpkgs": {
+    "url": "https://github.com/NixOS/nixpkgs",
+    "branch": "nixos-26.05",
+    "rev": "ec942ba042dad5ef097e2ef3a3effc034241f011",
+    "narHash": "sha256-R5nauXyqyfRUFiZycFFZdkF7wl6eaUpPLst35+2nJQY=",
+    "lastModified": 1779971959
   }
 }

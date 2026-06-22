@@ -1,0 +1,23 @@
+[Unit]
+Description=Miniflux postgres database
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=miniflux-database
+Environment=POSTGRES_DB=miniflux
+Environment=POSTGRES_USER=miniflux
+Secret=miniflux_db_password,type=env,target=POSTGRES_PASSWORD
+Image=docker.io/library/postgres:18
+Network=miniflux.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/miniflux-database:/var/lib/postgresql
+HealthCmd=CMD pg_isready
+HealthInterval=2m30s
+HealthStartPeriod=1m30s
+HealthRetries=3

@@ -1,0 +1,26 @@
+[Unit]
+Description=Kobofier resize/convert microservice for suwayomi
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=kobofier
+Image=ghcr.io/rjgraffham/ereadifier:latest
+Environment=EREADIFIER_DIMENSIONS=clara
+Environment=EREADIFIER_ENCODE=smallest
+Environment=EREADIFIER_LOSSY_QUALITY=85
+Environment=EREADIFIER_DOUBLE_PAGE=wider
+Environment=EREADIFIER_LISTEN=0.0.0.0:80
+Network=kobofier.network
+AutoUpdate=registry
+Pull=newer
+ReadOnly=true
+HealthCmd=CMD /ereadifier_healthcheck
+HealthInterval=1m0s
+HealthTimeout=30s
+HealthStartPeriod=30s
+HealthRetries=3

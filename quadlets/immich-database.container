@@ -1,0 +1,25 @@
+[Unit]
+Description=Immich postgres database
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=immich-database
+Environment=POSTGRES_INITDB_ARGS=--data-checksums
+Environment=POSTGRES_DB=immich
+Environment=POSTGRES_USER=postgres
+Secret=immich_db_password,type=env,target=POSTGRES_PASSWORD
+Image=ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
+Network=immich.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/immich-database:/var/lib/postgresql/data
+ShmSize=128m
+HealthCmd=/usr/local/bin/healthcheck.sh
+HealthInterval=5m0s
+HealthStartPeriod=5m0s
+HealthStartupInterval=5s

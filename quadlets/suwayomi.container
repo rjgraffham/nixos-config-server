@@ -1,0 +1,28 @@
+[Unit]
+Description=Suwayomi manga server
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=suwayomi
+Environment=TZ=Etc/UTC
+Image=ghcr.io/suwayomi/suwayomi-server:preview
+Network=proxy.network
+Network=kobofier.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/suwayomi-data:/home/suwayomi/.local/share/Tachidesk
+UserNS=keep-id:uid=1000,gid=1000
+ReadOnly=true
+Tmpfs=/run
+Tmpfs=/home/suwayomi/.pki
+Tmpfs=/home/suwayomi/.local/share/Tachidesk/cache
+HealthCmd=curl -fSs http://localhost:4567 | grep -q .
+HealthInterval=5m
+HealthStartPeriod=2m
+HealthTimeout=30s
+HealthRetries=3

@@ -1,0 +1,21 @@
+[Unit]
+Description=Beszel monitoring hub
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=beszel-hub
+Image=ghcr.io/henrygd/beszel/beszel:0.18
+Network=proxy.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/beszel-data:/beszel_data
+ReadOnly=true
+HealthCmd=CMD /beszel health --url http://localhost:8090
+HealthInterval=2m
+HealthStartPeriod=5s
+HealthRetries=3

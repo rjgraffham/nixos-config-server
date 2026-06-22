@@ -1,0 +1,76 @@
+:14352 {
+	# health check
+	respond "OK" 200
+}
+
+beszel.psquid.net {
+	reverse_proxy beszel-hub:8090
+}
+
+calibre.psquid.net {
+	reverse_proxy host.containers.internal:8083
+}
+
+ha.psquid.net {
+	reverse_proxy host.containers.internal:8123
+}
+
+immich.psquid.net {
+	reverse_proxy immich-server:2283
+}
+
+jellyfin.psquid.net {
+	reverse_proxy paimon-windows.raven-ghost.ts.net:8096
+}
+
+kavita.psquid.net {
+	encode gzip
+	reverse_proxy kavita:5000
+}
+
+music.psquid.net {
+	reverse_proxy host.containers.internal:4533
+}
+
+reader.psquid.net {
+	reverse_proxy miniflux:8080
+}
+
+yomi.psquid.net {
+	reverse_proxy suwayomi:4567
+}
+
+www.msjessi.ca, www.psquid.net {
+	redir https://{labels.1}.{labels.0}{uri}
+}
+
+psquid.net {
+	root /srv/sites/www.psquid.net
+	file_server
+}
+
+dl.psquid.net {
+	@cors-all path /uikit/* *.eot *.ttf *.woff *.woff2
+
+	root /srv/sites/dl.psquid.net/html
+	file_server
+
+	header @cors-all {
+		Access-Control-Allow-Origin "*"
+	}
+}
+
+dl-public.psquid.net {
+	root /srv/sites/dl-public.psquid.net/html
+	file_server browse
+}
+
+munin.psquid.net {
+	root /srv/munin
+	file_server
+}
+
+msjessi.ca {
+	root /srv/sites/www.msjessi.ca/html
+	file_server
+}

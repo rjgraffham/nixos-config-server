@@ -1,0 +1,19 @@
+[Unit]
+Description=Immich redis instance
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=immich-redis
+Image=docker.io/valkey/valkey:9
+Network=immich.network
+AutoUpdate=registry
+Pull=newer
+HealthCmd=valkey-cli ping | grep -q PONG
+HealthInterval=1m
+HealthStartPeriod=1m
+HealthRetries=3

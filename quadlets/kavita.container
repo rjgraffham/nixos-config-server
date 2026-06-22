@@ -1,0 +1,26 @@
+[Unit]
+Description=Kavita book comic and manga server
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=kavita
+Environment=TZ=Europe/London
+Image=ghcr.io/kareadita/kavita:latest
+Network=proxy.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/kavita-library:/library
+Volume=%h/kavita-config:/kavita/config
+UserNS=keep-id:uid=1001,gid=1001
+ReadOnly=true
+Tmpfs=/root
+HealthCmd=curl -fsS http://localhost:5000/api/health || exit 1
+HealthInterval=30s
+HealthTimeout=15s
+HealthStartPeriod=30s
+HealthRetries=3

@@ -1,0 +1,5 @@
+[Network]
+NetworkName=miniflux
+Driver=bridge
+Internal=true
+

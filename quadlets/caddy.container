@@ -1,0 +1,30 @@
+[Unit]
+Description=Caddy reverse proxy
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=caddy
+Image=docker.io/library/caddy
+Network=proxy.network
+PublishPort=80:80
+PublishPort=443:443
+PublishPort=443:443/udp
+AutoUpdate=registry
+Pull=newer
+ReadOnly=true
+Volume=%h/caddy-conf:/etc/caddy:ro
+Volume=%h/caddy-data:/data:U
+Volume=%h/caddy-config:/config:U
+Volume=%h/sites:/srv/sites:ro
+Mount=type=image,src=localhost/squaredle-search-wasm:latest,dst=/srv/sites/dl.psquid.net/html/squaredle-search/pkg
+Volume=/var/www/munin:/srv/munin:ro
+Tmpfs=/run
+HealthCmd=wget -q 'http://localhost:14352/' -O- | grep -q "^OK$"
+HealthInterval=1m
+HealthStartPeriod=1m
+HealthRetries=3

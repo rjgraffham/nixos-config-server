@@ -1,0 +1,5 @@
+[Network]
+NetworkName=kobofier
+Driver=bridge
+Internal=true
+

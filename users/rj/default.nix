@@ -37,6 +37,8 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMvizvex1rYdEYEVKsGzBTDQmztVEIyWpONBKN4joj6w robin@sitri"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEmdnx7nnOzUciHFHC3gs5QVKS7/WFr8JNG0A41PGpAg"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICdjjyEdKfGjiDEYbmaKj5q44nnFrYagtJPTzzib4tJC podman-remote"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdvbmW12mzacQxNcAVrvuHE/V0SRLkRozD7ScUbThlS rj@sitri-chromeos"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGjKHQx47zafyL4KlehoQiGUhDPvfAPRWbnNspIO5EvF rj@paimon-wsl-fedora"
     ];
 
   };

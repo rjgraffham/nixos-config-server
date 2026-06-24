@@ -10,7 +10,6 @@ in
 
   imports = [
     # services
-    ../../services/munin
     ../../services/navidrome
     ../../services/syncthing
     ../../services/tailscale

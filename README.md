@@ -54,16 +54,9 @@ added to the user environment:
 - `tmux`
 
 
-### `secrets`
-
-Secrets used by various modules, encrypted using [agenix][agenix].
-
-
 ### `services`
 
 Configuration for services:
-
-- [Munin][munin] at https://munin.psquid.net/
 
 - [Syncthing][syncthing]
 

@@ -7,10 +7,6 @@ beszel.psquid.net {
 	reverse_proxy beszel-hub:8090
 }
 
-calibre.psquid.net {
-	reverse_proxy host.containers.internal:8083
-}
-
 ha.psquid.net {
 	reverse_proxy host.containers.internal:8123
 }
@@ -29,7 +25,7 @@ kavita.psquid.net {
 }
 
 music.psquid.net {
-	reverse_proxy host.containers.internal:4533
+	reverse_proxy navidrome:4533
 }
 
 reader.psquid.net {
@@ -63,11 +59,6 @@ dl.psquid.net {
 dl-public.psquid.net {
 	root /srv/sites/dl-public.psquid.net/html
 	file_server browse
-}
-
-munin.psquid.net {
-	root /srv/munin
-	file_server
 }
 
 msjessi.ca {

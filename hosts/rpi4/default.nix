@@ -10,8 +10,6 @@ in
 
   imports = [
     # services
-    ../../services/navidrome
-    ../../services/syncthing
     ../../services/tailscale
 
     # users

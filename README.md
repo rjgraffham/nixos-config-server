@@ -58,8 +58,6 @@ added to the user environment:
 
 Configuration for services:
 
-- [Syncthing][syncthing]
-
 - [Tailscale][tailscale]
 
 

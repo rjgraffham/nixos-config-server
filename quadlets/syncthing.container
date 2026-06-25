@@ -1,0 +1,19 @@
+[Unit]
+Description=Syncthing file sync
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=syncthing
+Image=docker.io/syncthing/syncthing:2
+AutoUpdate=registry
+Pull=newer
+Network=host
+Volume=%h/Sync:/Sync:Z
+Volume=%h/syncthing-config:/var/syncthing/config:Z
+UserNS=keep-id:uid=1000,gid=1000
+ReadOnly=true

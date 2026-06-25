@@ -1,0 +1,18 @@
+[Unit]
+Description=Navidrome music library server
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=navidrome
+Image=docker.io/deluan/navidrome:latest
+Network=proxy.network
+AutoUpdate=registry
+Pull=newer
+Volume=%h/navidrome-data:/data
+Volume=%h/Sync/Music:/music:Z
+ReadOnly=true

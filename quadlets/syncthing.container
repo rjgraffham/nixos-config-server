@@ -17,3 +17,8 @@ Volume=%h/Sync:/Sync:Z
 Volume=%h/syncthing-config:/var/syncthing/config:Z
 UserNS=keep-id:uid=1000,gid=1000
 ReadOnly=true
+HealthCmd=curl -fkLsS -m 2 127.0.0.1:8384/rest/noauth/health | grep -o --color=never OK || exit 1
+HealthInterval=1m
+HealthTimeout=10s
+HealthStartPeriod=1m
+HealthRetries=3
